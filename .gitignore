@@ -1,3 +1,10 @@
+#bat
+*.bat
+
+#Scss
+*.scss
+*.map
+
 # Logs
 logs
 *.log
