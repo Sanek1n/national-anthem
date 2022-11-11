@@ -1,3 +1,8 @@
+# webpack
+webpack.config.js
+package-lock.json
+package.json
+
 #bat
 *.bat
 

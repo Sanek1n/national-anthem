@@ -1,0 +1,12 @@
+.main {
+  background-image: url('../assets/image/globe.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 1400px;
+  height: 80vh;
+}
+
+body {
+  background-color: rgb(87, 57, 32);
+}
