@@ -7,6 +7,79 @@
   <title>Main</title>
 </head>
 <body>
-  
+  <main class="quiz">
+    <div class="quiz__wrapper">
+      <div class="quiz__levels">
+        <ul class="levels__items">
+          <li class="levels__item">Европа</li>
+          <li class="levels__item">Сев. и Юж. Америка</li>
+          <li class="levels__item">Азия</li>
+          <li class="levels__item">Африка</li>
+          <li class="levels__item">Океания</li>
+        </ul>
+      </div>
+      <section class="quiz__question">
+        <div class="question__wrapper">
+          <div class="question__flag"></div>
+          <h2 class="question__title">*******</h2>
+          <div class="question__content">
+            <div class="question__control">
+              <button class="control__play"></button>
+            </div>
+            <div class="question__progress">
+                  <input type="range" class="progress__bar" value="0">
+                  <label class="progress__current">0:00</label>
+                  <label class="progress__length">0:30</label>
+            </div>
+            <div class="question__volume">
+              <div class="volume__slider">
+                <div class="volume__set"></div>
+              </div>
+              <img class="volume__icon" src="./assets/svg/volume_on.svg" alt="volume">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="quiz__answers">
+        <ul class="answers__items">
+          <li class="answers__item">Страна 1</li>
+          <li class="answers__item right">Страна 2</li>
+          <li class="answers__item wrong">Страна 3</li>
+        </ul>
+      </div>
+      <div class="answers__description">
+        <div class="question__wrapper">
+          <div class="question__flag"></div>
+          <h2 class="question__title">*******</h2>
+          <div class="question__content">
+            <div class="question__control">
+              <button class="control__play"></button>
+            </div>
+            <div class="question__progress">
+                  <input type="range" class="progress__bar" value="0">
+                  <label class="progress__current">0:00</label>
+                  <label class="progress__length">0:30</label>
+            </div>
+            <div class="question__volume">
+              <div class="volume__slider">
+                <div class="volume__set"></div>
+              </div>
+              <img class="volume__icon" src="./assets/svg/volume_on.svg" alt="volume">
+            </div>
+          </div>
+        </div>
+        <ul class="description__content">
+          <li class="description__name-rus">Название на русском: </li>
+          <li class="description__name-self">Название на государственном языке: </li>
+          <li class="description__lang">Язык гимна: </li>
+          <li class="description__autor">Автор текста гимна: </li>
+          <li class="description__composer">Композитор: </li>
+          <li class="description__date-write">Дата написания: </li>
+          <li class="description__date-accept">Дата принятия: </li>
+        </ul>
+      </div>
+      <button class="quiz__button">Дальше</button>
+    </div>
+  </main>
 </body>
 </html>
