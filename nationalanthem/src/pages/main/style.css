@@ -1,0 +1,232 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 14px;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+.quiz {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.quiz__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.quiz__header {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz__count {
+    font-size: 1.5em;
+}
+
+.quiz__levels {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.levels__items {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
+.levels__item {
+    width: calc(100%/5);
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.quiz__question {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 124, 17);
+}
+
+.question__flag {
+    width: 200px;
+    height: 110px;
+    background-image: url('../../assets/images/flags/europa/switzerland.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(230, 108, 9);
+}
+
+.question__content {
+    width: calc(100% - 250px);
+    border: 1px solid rgb(230, 108, 9);
+}
+
+.question__title {
+    font-size: 2.5em;
+}
+
+.question__player {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.control__play {
+    width: 90px;
+    height: 55px;
+    background-image: url('../../assets/images/svg/play.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.question__progress {
+    position: relative;
+    padding: 0 20px;
+    width: calc(100% - 90px - 80px);
+}
+
+.progress__bar {
+    width: 100%;
+}
+
+.progress__current {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.progress__length {
+    position: absolute;
+    left: calc(100% - 50px);
+    top: 20px;
+}
+
+.quiz__block {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz__answers {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid darkmagenta;
+}
+
+.answers__items {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    list-style: none;
+    border: 1px solid darkblue;
+}
+
+.answers__item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 1.5em;
+    padding: 0 20px;
+    border: 1px solid darkgreen;
+}
+
+.question__wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid darkorange;
+}
+
+.answers__flag {
+    width: 200px;
+    height: 110px;
+    background-image: url('../../assets/images/flags/europa/switzerland.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(230, 108, 9);
+}
+
+.answers__content {
+    width: calc(100% - 250px);
+    border: 1px solid rgb(230, 108, 9);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.answers__title {
+    font-size: 2.5em;
+}
+
+.answers__play {
+    width: 90px;
+    height: 55px;
+    background-image: url('../../assets/images/svg/play.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.answers__progress {
+    position: relative;
+    padding: 0 20px;
+    width: calc(100% - 90px - 80px);
+}
+
+.answers__bar {
+    width: 100%;
+}
+
+.answers__current {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.answers__length {
+    position: absolute;
+    left: calc(100% - 50px);
+    top: 20px;
+}
+
+.description__item {
+    list-style: none;
+    line-height: 1.3em;
+    font-size: 1.3em;
+}
+
+.quiz__button {
+    display: inline-block;
+    position: relative;
+    right: calc(150px - 100%);
+    width: 150px;
+    height: 40px;
+}
