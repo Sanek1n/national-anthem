@@ -13,6 +13,8 @@ const anthemData = [
       composer: 'Генри Кэри',
       dateWrite: '1745',
       dateAccept: '1745',
+      flag: '../../assets/images/flags/europa/great-britain.png',
+      audio: '../../assets/sounds/europa/velikobritaniya.mp3',
       }, {
       id: '1',
       area: 'Европа',
@@ -24,6 +26,8 @@ const anthemData = [
       composer: 'Йозеф Гайдн',
       dateWrite: '1841',
       dateAccept: '1952',
+      flag: '../../assets/images/flags/europa/germany.png',
+      audio: '../../assets/sounds/europa/germaniya.mp3',
       }, {
       id: '2',
       area: 'Европа',
@@ -35,6 +39,8 @@ const anthemData = [
       composer: 'Клод Жозеф Руже де Лиль',
       dateWrite: '1792',
       dateAccept: '1795, 1879',
+      flag: '../../assets/images/flags/europa/france.png',
+      audio: '../../assets/sounds/europa/frantsiya.mp3',
       }, {
       id: '3',
       area: 'Европа',
@@ -46,6 +52,8 @@ const anthemData = [
       composer: 'Микеле Новаро',
       dateWrite: '1847',
       dateAccept: '1946',
+      flag: '../../assets/images/flags/europa/italy.png',
+      audio: '../../assets/sounds/europa/italiya.mp3',
       }, {
       id: '4',
       area: 'Европа',
@@ -57,6 +65,8 @@ const anthemData = [
       composer: 'Альберих Цвиссиг',
       dateWrite: '1841',
       dateAccept: '1961',
+      flag: '../../assets/images/flags/europa/switzerland.png',
+      audio: '../../assets/sounds/europa/shveitsariya.mp3',
       }, {
       id: '5',
       area: 'Европа',
@@ -68,6 +78,8 @@ const anthemData = [
       composer: 'Неизвестно',
       dateWrite: '1797',
       dateAccept: '1927',
+      flag: '../../assets/images/flags/europa/poland.png',
+      audio: '../../assets/sounds/europa/polsha.mp3',
       }, {
       id: '6',
       area: 'Европа',
@@ -79,6 +91,8 @@ const anthemData = [
       composer: '',
       dateWrite: '',
       dateAccept: '1770',
+      flag: '../../assets/images/flags/europa/spain.png',
+      audio: '../../assets/sounds/europa/ispaniya.mp3',
       }, {
       id: '7',
       area: 'Европа',
@@ -90,6 +104,8 @@ const anthemData = [
       composer: 'Вольфганг Амадей Моцарт',
       dateWrite: '1947',
       dateAccept: '1947',
+      flag: '../../assets/images/flags/europa/austria.png',
+      audio: '../../assets/sounds/europa/avstriya.mp3',
       }, {
       id: '8',
       area: 'Европа',
@@ -101,6 +117,8 @@ const anthemData = [
       composer: 'Народная музыка',
       dateWrite: '1844',
       dateAccept: '',
+      flag: '../../assets/images/flags/europa/sweden.png',
+      audio: '../../assets/sounds/europa/shvetsiya.mp3',
       }, {
       id: '9',
       area: 'Европа',
@@ -112,6 +130,8 @@ const anthemData = [
       composer: 'Фредрик Пациус',
       dateWrite: '1848',
       dateAccept: '',
+      flag: '../../assets/images/flags/europa/finland.png',
+      audio: '../../assets/sounds/europa/finlyandiya.mp3',
     }
   ],
   [
@@ -126,6 +146,8 @@ const anthemData = [
       composer: 'Сайед Дарвиш',
       dateWrite: '1878',
       dateAccept: '1979',
+      flag: '../../assets/images/flags/africa/egypt.png',
+      audio: '../../assets/sounds/africa/egipet.mp3',
     }, {
       id: '1',
       area: 'Африка',
@@ -137,6 +159,8 @@ const anthemData = [
       composer: 'Енох Сонтонга, Мартинус Лоуренс де Вильерс',
       dateWrite: '1897',
       dateAccept: '1997',
+      flag: '../../assets/images/flags/africa/yuar.png',
+      audio: '../../assets/sounds/africa/yuar.mp3',
     }, {
       id: '2',
       area: 'Африка',
@@ -148,6 +172,8 @@ const anthemData = [
       composer: 'Сэломон Луку Мытыку',
       dateWrite: '1957',
       dateAccept: '1992',
+      flag: '../../assets/images/flags/africa/ethiopia.png',
+      audio: '../../assets/sounds/africa/efiopiya.mp3',
     }, {
       id: '3',
       area: 'Африка',
@@ -159,6 +185,8 @@ const anthemData = [
       composer: 'Мухаммед Абд аль-Ваххаб',
       dateWrite: '1987',
       dateAccept: '1987',
+      flag: '../../assets/images/flags/africa/tunisia.png',
+      audio: '../../assets/sounds/africa/tunis.mp3',
     }, {
       id: '4',
       area: 'Африка',
@@ -170,6 +198,8 @@ const anthemData = [
       composer: 'Абдуллахи Карше',
       dateWrite: '1959',
       dateAccept: '2012',
+      flag: '../../assets/images/flags/africa/somalia.png',
+      audio: '../../assets/sounds/africa/somali.mp3',
     }, {
       id: '5',
       area: 'Африка',
@@ -181,6 +211,8 @@ const anthemData = [
       composer: 'Робер Жаке, Николя Абель, Франсуа Фрионне',
       dateWrite: '1961',
       dateAccept: '1961',
+      flag: '../../assets/images/flags/africa/niger.png',
+      audio: '../../assets/sounds/africa/niger.mp3',
     }, {
       id: '6',
       area: 'Африка',
@@ -192,6 +224,8 @@ const anthemData = [
       composer: 'Эрбер Пеппер',
       dateWrite: '1960',
       dateAccept: '1960',
+      flag: '../../assets/images/flags/africa/senegal.png',
+      audio: '../../assets/sounds/africa/senegal.mp3',
     }, {
       id: '7',
       area: 'Африка',
@@ -203,6 +237,8 @@ const anthemData = [
       composer: 'Нигерийский оркестр полиции',
       dateWrite: '1978',
       dateAccept: '1978',
+      flag: '../../assets/images/flags/africa/nigeria.png',
+      audio: '../../assets/sounds/africa/nigeriya.mp3',
     }, {
       id: '8',
       area: 'Африка',
@@ -214,6 +250,8 @@ const anthemData = [
       composer: '',
       dateWrite: '1958',
       dateAccept: '1958',
+      flag: '../../assets/images/flags/africa/madagascar.png',
+      audio: '../../assets/sounds/africa/madagaskar.mp3',
     }, {
       id: '9',
       area: 'Африка',
@@ -225,6 +263,8 @@ const anthemData = [
       composer: 'Енох Сонтонга',
       dateWrite: '1897',
       dateAccept: '1964',
+      flag: '../../assets/images/flags/africa/tanzania.png',
+      audio: '../../assets/sounds/africa/tanzaniya.mp3',
     }
   ],
   [
@@ -239,6 +279,8 @@ const anthemData = [
       composer: 'Джон Стаффорд Смит',
       dateWrite: '1814',
       dateAccept: '1931',
+      flag: '../../assets/images/flags/america/united-states.png',
+      audio: '../../assets/sounds/america/usa.mp3',
     }, {
       id: '1',
       area: 'С. и Ю. Америка',
@@ -250,6 +292,8 @@ const anthemData = [
       composer: 'Каликса Лавалле',
       dateWrite: '1880',
       dateAccept: '1980',
+      flag: '../../assets/images/flags/america/canada.png',
+      audio: '../../assets/sounds/america/kanada.mp3',
     }, {
       id: '2',
       area: 'С. и Ю. Америка',
@@ -261,6 +305,8 @@ const anthemData = [
       composer: 'Хайме Нуно',
       dateWrite: '1853',
       dateAccept: '1943',
+      flag: '../../assets/images/flags/america/mx.png',
+      audio: '../../assets/sounds/america/meksika.mp3',
     }, {
       id: '3',
       area: 'С. и Ю. Америка',
@@ -272,6 +318,8 @@ const anthemData = [
       composer: 'Перучо Фигередо / Антонио Родригес Феррер',
       dateWrite: '1868',
       dateAccept: '1902',
+      flag: '../../assets/images/flags/america/cuba.png',
+      audio: '../../assets/sounds/america/kuba.mp3',
     }, {
       id: '4',
       area: 'С. и Ю. Америка',
@@ -283,6 +331,8 @@ const anthemData = [
       composer: 'Франсиско Мануэл да Силва',
       dateWrite: '1832',
       dateAccept: '1890',
+      flag: '../../assets/images/flags/america/brazil.png',
+      audio: '../../assets/sounds/america/braziliya.mp3',
     }, {
       id: '5',
       area: 'С. и Ю. Америка',
@@ -294,6 +344,8 @@ const anthemData = [
       composer: 'Блас Парера',
       dateWrite: '1812',
       dateAccept: '1813',
+      flag: '../../assets/images/flags/america/argentina.png',
+      audio: '../../assets/sounds/america/argentina.mp3',
     }, {
       id: '6',
       area: 'С. и Ю. Америка',
@@ -305,6 +357,8 @@ const anthemData = [
       composer: 'Хосе Бернардо Альседо',
       dateWrite: '1821',
       dateAccept: '1822',
+      flag: '../../assets/images/flags/america/peru.png',
+      audio: '../../assets/sounds/america/peru.mp3',
     }, {
       id: '7',
       area: 'С. и Ю. Америка',
@@ -316,6 +370,8 @@ const anthemData = [
       composer: 'Рамон Карнисер',
       dateWrite: '1827',
       dateAccept: '1828',
+      flag: '../../assets/images/flags/america/chile.png',
+      audio: '../../assets/sounds/america/chili.mp3',
     }, {
       id: '8',
       area: 'С. и Ю. Америка',
@@ -327,6 +383,8 @@ const anthemData = [
       composer: 'Хуан Хосе Ландаэта',
       dateWrite: '1810',
       dateAccept: '1881',
+      flag: '../../assets/images/flags/america/ve.png',
+      audio: '../../assets/sounds/america/venesuela.mp3',
     }, {
       id: '9',
       area: 'С. и Ю. Америка',
@@ -338,6 +396,8 @@ const anthemData = [
       composer: 'Оресте Синдичи',
       dateWrite: '1887',
       dateAccept: '1920',
+      flag: '../../assets/images/flags/america/colombia.png',
+      audio: '../../assets/sounds/america/kolumbiya.mp3',
     }
   ],
   [
@@ -352,6 +412,8 @@ const anthemData = [
       composer: 'Не Эр',
       dateWrite: '1934',
       dateAccept: '1949',
+      flag: '../../assets/images/flags/asia/china.png',
+      audio: '../../assets/sounds/asia/kitai.mp3',
       }, {
       id: '1',
       area: 'Азия',
@@ -363,6 +425,8 @@ const anthemData = [
       composer: 'Рабиндранат Тагор',
       dateWrite: '1911',
       dateAccept: '1950',
+      flag: '../../assets/images/flags/asia/india.png',
+      audio: '../../assets/sounds/asia/indiya.mp3',
       }, {
       id: '2',
       area: 'Азия',
@@ -374,6 +438,8 @@ const anthemData = [
       composer: 'Абдул Рахман Аль-Хатееб',
       dateWrite: '1935',
       dateAccept: '1950, 1984',
+      flag: '../../assets/images/flags/asia/saudi-arabia.png',
+      audio: '../../assets/sounds/asia/saudovskaya-araviya.mp3',
       }, {
       id: '3',
       area: 'Азия',
@@ -385,6 +451,8 @@ const anthemData = [
       composer: 'Хасан Рияхи',
       dateWrite: '1990',
       dateAccept: '1990',
+      flag: '../../assets/images/flags/asia/iran.png',
+      audio: '../../assets/sounds/asia/iran.mp3',
       }, {
       id: '4',
       area: 'Азия',
@@ -396,6 +464,8 @@ const anthemData = [
       composer: 'Пхра Чендурийанг',
       dateWrite: '1932',
       dateAccept: '1934',
+      flag: '../../assets/images/flags/asia/thailand.png',
+      audio: '../../assets/sounds/asia/tai-land.mp3',
       }, {
       id: '5',
       area: 'Азия',
@@ -407,6 +477,8 @@ const anthemData = [
       composer: 'Билэгийн Дамдинсурэн; Лувсанжамбын Мурдорж',
       dateWrite: '1961',
       dateAccept: '1961',
+      flag: '../../assets/images/flags/asia/mongolia.png',
+      audio: '../../assets/sounds/asia/mongoliya.mp3',
       }, {
       id: '6',
       area: 'Азия',
@@ -418,6 +490,8 @@ const anthemData = [
       composer: 'Ан Иктхэ',
       dateWrite: '1936',
       dateAccept: '1948',
+      flag: '../../assets/images/flags/asia/south-korea.png',
+      audio: '../../assets/sounds/asia/yuzhnaya-koreya.mp3',
       }, {
       id: '7',
       area: 'Азия',
@@ -429,6 +503,8 @@ const anthemData = [
       composer: 'Ван Као',
       dateWrite: '1944',
       dateAccept: '1945, 1976',
+      flag: '../../assets/images/flags/asia/vjetnam.png',
+      audio: '../../assets/sounds/asia/vetnam.mp3',
       }, {
       id: '8',
       area: 'Азия',
@@ -440,6 +516,8 @@ const anthemData = [
       composer: 'Ахмед Гулам Али Чагла',
       dateWrite: '1952',
       dateAccept: '1954',
+      flag: '../../assets/images/flags/asia/pakistan.png',
+      audio: '../../assets/sounds/asia/pakistan.mp3',
       }, {
       id: '9',
       area: 'Азия',
@@ -451,6 +529,8 @@ const anthemData = [
       composer: 'Ким Вон Гюн',
       dateWrite: '1946',
       dateAccept: '1947',
+      flag: '../../assets/images/flags/asia/north-korea.png',
+      audio: '../../assets/sounds/asia/kndr.mp3',
       }
   ], 
   [
@@ -465,6 +545,8 @@ const anthemData = [
       composer: 'Питер Доддс Маккормик',
       dateWrite: '1878',
       dateAccept: '1984',
+      flag: '../../assets/images/flags/oceania/australia.png',
+      audio: '../../assets/sounds/oceania/avstraliya.mp3',
       }, {
       id: '1',
       area: 'Океания',
@@ -476,6 +558,8 @@ const anthemData = [
       composer: 'Джон Джозеф Вудс',
       dateWrite: '1870',
       dateAccept: '1940, 1977',
+      flag: '../../assets/images/flags/oceania/new-zealand.png',
+      audio: '../../assets/sounds/oceania/novaya-zelandiya.mp3',
       }, {
       id: '2',
       area: 'Океания',
@@ -487,6 +571,8 @@ const anthemData = [
       composer: 'Ваге Рудольф Супратман',
       dateWrite: '1924',
       dateAccept: '1945',
+      flag: '../../assets/images/flags/oceania/indonesia.png',
+      audio: '../../assets/sounds/oceania/indoneziya.mp3',
       }, {
       id: '3',
       area: 'Океания',
@@ -498,6 +584,8 @@ const anthemData = [
       composer: 'Том Шаклейди',
       dateWrite: '1975',
       dateAccept: '1975',
+      flag: '../../assets/images/flags/oceania/papua-new-guinea.png',
+      audio: '../../assets/sounds/oceania/papua-novaya-gvineya.mp3',
       }, {
       id: '4',
       area: 'Океания',
@@ -509,6 +597,8 @@ const anthemData = [
       composer: 'Сэр Томас Дэвис',
       dateWrite: '1982',
       dateAccept: '1982',
+      flag: '../../assets/images/flags/oceania/cook-islands.png',
+      audio: '../../assets/sounds/oceania/cook-islands.mp3',
       }, {
       id: '5',
       area: 'Океания',
@@ -520,6 +610,8 @@ const anthemData = [
       composer: 'Панапаса Балекана',
       dateWrite: '1978',
       dateAccept: '1978',
+      flag: '../../assets/images/flags/oceania/solomon-islands.png',
+      audio: '../../assets/sounds/oceania/solomonovy-ostrova.mp3',
       }, {
       id: '6',
       area: 'Океания',
@@ -531,6 +623,8 @@ const anthemData = [
       composer: 'Афонсу Редентор де Араужу',
       dateWrite: '1979',
       dateAccept: '2002',
+      flag: '../../assets/images/flags/oceania/timor-leste.png',
+      audio: '../../assets/sounds/oceania/vostochnyj-timor.mp3',
       }, {
       id: '7',
       area: 'Океания',
@@ -542,6 +636,8 @@ const anthemData = [
       composer: 'Уриум Тамуэра Иотэба',
       dateWrite: '1979',
       dateAccept: '1979',
+      flag: '../../assets/images/flags/oceania/kiribati.png',
+      audio: '../../assets/sounds/oceania/kiribati.mp3',
       }, {
       id: '8',
       area: 'Океания',
@@ -553,6 +649,8 @@ const anthemData = [
       composer: 'Чарльз Остин Майлс',
       dateWrite: '1970',
       dateAccept: '1970',
+      flag: '../../assets/images/flags/oceania/fiji.png',
+      audio: '../../assets/sounds/oceania/fidzhi.mp3',
       }, {
       id: '9',
       area: 'Океания',
@@ -564,6 +662,8 @@ const anthemData = [
       composer: 'Франсуа Винсент Эссав',
       dateWrite: '1980',
       dateAccept: '1980',
+      flag: '../../assets/images/flags/oceania/vu.png',
+      audio: '../../assets/sounds/oceania/vanuatu.mp3',
       }
   ]
 ]
