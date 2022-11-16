@@ -7,6 +7,7 @@ class Player {
   constructor(section, id) {
     this.sectionId = section;
     this.anthemId = id;
+    this.interval = null;
 
     this.isPlay = false;
     this.anthem = new Audio();
@@ -16,6 +17,7 @@ class Player {
     
     this.volumeSlider = document.querySelector('.volume__slider');
     this.volume = document.querySelector('.volume__icon');
+    this.volumeSet = document.querySelector('.volume__set');
 
     this.currentTime = document.querySelector('.progress__current');
     this.maxTime = document.querySelector('.progress__length');
@@ -25,14 +27,15 @@ class Player {
   }
 
   init() {
-    this.playButton.addEventListener('click', (event) => {this.anthemPlayToggle(event)});
+    this.playButton.addEventListener('click', () => {this.anthemPlayToggle()});
+
     this.progressBar.addEventListener("click", (event) => {
       const timelineWidth = window.getComputedStyle(event.target).width;
       const timeToSeek = event.offsetX / parseInt(timelineWidth) * this.anthem.duration;
       this.anthem.currentTime = timeToSeek;
     }, false);
 
-    window.setInterval(() => {
+    this.interval = window.setInterval(() => {
       this.progressBar.value = this.anthem.currentTime / (this.anthem.duration || 1) * 100;
       this.currentTime.textContent = this.getTime(this.anthem.currentTime);
     }, 100);
@@ -40,9 +43,10 @@ class Player {
     this.initVolumeControl();
   }
 
-  async anthemPlayToggle(event) {
+  async anthemPlayToggle() {
     if (!this.anthem.src) {
       let response = await fetch(anthemData[this.sectionId][this.anthemId].audio);
+
       if (response.ok) {
         let audio = await response.blob();
         this.anthem.src = URL.createObjectURL(audio);
@@ -60,55 +64,48 @@ class Player {
     }
 
     if (this.isPlay) {
-        if (event.target.classList.contains('control__play')) {
-            this.anthem.pause();
-            this.isPlay = false;
-            event.target.classList.remove('pause');
-        }
+        this.anthem.pause();
+        this.isPlay = false;
+        this.playButton.classList.remove('pause');
     } else {
         this.isPlay = true;
         this.anthem.play();
-        event.target.classList.add('pause');
+        this.playButton.classList.add('pause');
     };
   }
 
-  showQuestion() {
-    this.placeFlag.style.backgroundImage = `url(${anthemData[this.sectionId][this.anthemId].flag})`;
-    this.placeNameCountry.textContent = `${anthemData[this.sectionId][this.anthemId].country}`;
-  }
-
   initVolumeControl() {
-  this.volume.addEventListener('mouseover', () => {
-    this.volumeSlider.classList.add('slider-up');
-  });
-
-  this.volume.addEventListener('mouseout', () => {
-    this.volumeSlider.classList.remove('slider-up');
-  });
-
-  this.volumeSlider.addEventListener('mouseover', () => {
-    this.volumeSlider.classList.add('slider-up');
-  });
-
-  this.volumeSlider.addEventListener('mouseout', () => {
-    this.volumeSlider.classList.remove('slider-up');
-  });
-
-  this.volumeSlider.addEventListener('click', (event) => {
-    const sliderWidth = window.getComputedStyle(this.volumeSlider).width;
-    const newVolume = event.offsetX / parseInt(sliderWidth);
-    this.anthem.volume = -(newVolume - 1);
-    document.querySelector(".volume__set").style.width = newVolume * 100 + '%';
-  }, false);
-
-  this.volumeButton.addEventListener('click', () => {
-    this.anthem.muted = !this.anthem.muted;
-        if (this.anthem.muted) {
-          this.volumeButton.src="../../assets/images/svg/volume_off.svg";
-        } else {
-          this.volumeButton.src="../../assets/images/svg/volume_on.svg";
-        }
+    this.volume.addEventListener('mouseover', () => {
+      this.volumeSlider.classList.add('slider-up');
     });
+
+    this.volume.addEventListener('mouseout', () => {
+      this.volumeSlider.classList.remove('slider-up');
+    });
+
+    this.volumeSlider.addEventListener('mouseover', () => {
+      this.volumeSlider.classList.add('slider-up');
+    });
+
+    this.volumeSlider.addEventListener('mouseout', () => {
+      this.volumeSlider.classList.remove('slider-up');
+    });
+
+    this.volumeSlider.addEventListener('click', (event) => {
+      const sliderWidth = window.getComputedStyle(this.volumeSlider).width;
+      const newVolume = event.offsetX / parseInt(sliderWidth);
+      this.anthem.volume = -(newVolume - 1);
+      this.volumeSet.style.width = newVolume * 100 + '%';
+    }, false);
+
+    this.volumeButton.addEventListener('click', () => {
+      this.anthem.muted = !this.anthem.muted;
+          if (this.anthem.muted) {
+            this.volumeButton.src="../../assets/images/svg/volume_off.svg";
+          } else {
+            this.volumeButton.src="../../assets/images/svg/volume_on.svg";
+          }
+      });
   }
 
   getTime(num) {

@@ -72,7 +72,7 @@ html {
 .question__flag {
     width: 200px;
     height: 110px;
-    background-image: url('../../assets/images/flags/europa/switzerland.png');
+    background-image: url('../../assets/images/flags/flag.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,20 +98,19 @@ html {
 .control__play {
     width: 90px;
     height: 55px;
+    background: transparent;
     background-image: url('../../assets/images/svg/play.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: none;
+    transition: .5s;
 }
 
-.pause {
-    width: 90px;
-    height: 55px;
-    background-image: url('../../assets/images/svg/stop.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.control__play:hover {
+    filter: brightness(150%) drop-shadow(0px 0px 5px #A65900);
+    transform: scale(1.05);
+  }
 
 .load {
     width: 90px;
@@ -141,7 +140,8 @@ html {
     top: 20px;
 }
 
-.question__volume {
+.question__volume,
+.answers__volume {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -151,7 +151,8 @@ html {
     cursor: pointer;
   }
   
-  .volume__slider {
+  .volume__slider,
+  .answers__slider {
     position: absolute;
     width: 0px;
     height: 15px;
@@ -170,13 +171,20 @@ html {
     z-index: 5;
   }
 
-  .volume__set {
+  .volume__set, 
+  .answers__set {
     height: 100%;
     width: 25%;
     background: #0C0874;
   }
+
+  .volume__icon,
+  .answers__icon {
+    transition: .5s;
+  }
   
-  .volume_icon:hover {
+  .volume__icon:hover,
+  .answers__icon:hover {
     filter: brightness(150%) drop-shadow(0px 0px 5px #A65900);
   }
 
@@ -198,6 +206,7 @@ html {
     flex-direction: column;
     flex-grow: 1;
     list-style: none;
+    border-radius: 5px;
     border: 1px solid darkblue;
 }
 
@@ -208,6 +217,27 @@ html {
     font-size: 1.5em;
     padding: 0 15px;
     border: 1px solid darkgreen;
+    transition: .2s;
+}
+
+.answers__item:hover {
+    background-color: aquamarine;
+}
+.answers__item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #A65900;
+}
+
+.wrong::before {
+    background-color: red;
+}
+
+.right::before {
+    background-color: green;
 }
 
 .question__wrapper {
@@ -216,6 +246,11 @@ html {
     flex-direction: column;
     padding: 15px;
     border: 1px solid darkorange;
+}
+
+.question__text {
+    height: 350px;
+    font-size: 1.5em;
 }
 
 .description__title {
@@ -227,7 +262,7 @@ html {
 .answers__flag {
     width: 180px;
     height: 90px;
-    background-image: url('../../assets/images/flags/europa/switzerland.png');
+    background-image: url('../../assets/images/flags/flag.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -251,7 +286,23 @@ html {
 .answers__play {
     width: 90px;
     height: 55px;
+    background: transparent;
     background-image: url('../../assets/images/svg/play.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    transition: .5s;
+}
+
+.answers__play:hover {
+    filter: brightness(150%) drop-shadow(0px 5px 5px #A65900);
+}
+
+.pause {
+    width: 90px;
+    height: 55px;
+    background-image: url('../../assets/images/svg/stop.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
