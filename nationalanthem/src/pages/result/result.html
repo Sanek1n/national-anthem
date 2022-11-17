@@ -10,38 +10,43 @@
 <body>
   <main class="main">
     <h1 class="main__title">Результат:</h1>
-    <table class="main__result">
-      <thead>
+    <table class="main__table">
+      <thead class="table__head">
         <tr>
-          <td>Раздел</td>
-          <td>Баллы</td>
+          <td class="head__area">Раздел</td>
+          <td class="head__score">Баллы</td>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Европа</td>
-          <td>0</td>
+      <tbody class="table__body">
+        <tr class="body__row">
+          <td class="body__area area-0">Европа</td>
+          <td class="body__score score-0">0</td>
         </tr>
-        <tr>
-          <td>Сев. и Юж. Америка</td>
-          <td>0</td>
+        <tr class="body__row">
+          <td class="body__area area-1">Америка</td>
+          <td class="body__score score-1">0</td>
         </tr>
-        <tr>
-          <td>Азия</td>
-          <td>0</td>
+        <tr class="body__row">
+          <td class="body__area area-2">Азия</td>
+          <td class="body__score score-2">0</td>
         </tr>
-        <tr>
-          <td>Африка</td>
-          <td>0</td>
+        <tr class="body__row">
+          <td class="body__area area-3">Африка</td>
+          <td class="body__score score-3">0</td>
         </tr>
-        <tr>
-          <td>Океания</td>
-          <td>0</td>
+        <tr class="body__row">
+          <td class="body__area area-4">Океания</td>
+          <td class="body__score score-4">0</td>
+        </tr>
+        <tr class="body__row">
+          <td class="body__area area-5">Всего:</td>
+          <td class="body__score score-5">0</td>
         </tr>
       </tbody>
     </table>
-    <button class="main__repeat">Повторить</button>
-    <button class="main__main">На главную страницу</button>
+    <button class="main__repeat" onclick="window.location.href = '../main/main.html'">Повторить</button>
+    <button class="main__main" onclick="window.location.href = '../../index.html'">На главную страницу</button>
   </main>
+  <script src="./result.js"></script>
 </body>
 </html>

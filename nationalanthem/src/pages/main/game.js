@@ -114,6 +114,7 @@ class Game extends Player {
     
     if (!this.answerSet.has(id) && !this.isAnswer) {
       if (id === this.gameArray[this.sectionId]) {
+        this.playTrue();
           this.score += this.scoreValue;
           this.scoreArray.push(this.scoreValue);
           document.querySelector('.quiz__count').textContent = `Score: ${this.score}`;
@@ -128,12 +129,25 @@ class Game extends Player {
           }
 
       } else {
+        this.playFalse();
           this.scoreValue = (this.scoreValue) ? --this.scoreValue : this.scoreValue;
           event.target.classList.add('wrong');
       }
     }
     this.answerSet.add(id);
   } 
+
+  playFalse() {
+    let audio = new Audio();
+    audio.src = '../../assets/sounds/false.mp3';
+    audio.autoplay = true;
+  }
+
+  playTrue() {
+    let audio = new Audio();
+    audio.src = '../../assets/sounds/true.mp3';
+    audio.autoplay = true;
+  }
 
   resetContent() {
 
@@ -190,7 +204,6 @@ class Game extends Player {
     this.mainPlayer.playButton.classList.remove('pause');
 
     this.mainPlayer.isPlay = false;
-
 
     this.scoreValue = 5;
     this.isClick = false;
