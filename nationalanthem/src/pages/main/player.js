@@ -24,6 +24,7 @@ class Player {
 
     this.placeFlag = document.querySelector('.question__flag');
     this.placeNameCountry = document.querySelector('.question__title');
+
   }
 
   init() {
@@ -41,6 +42,7 @@ class Player {
     }, 100);
 
     this.initVolumeControl();
+
   }
 
   async anthemPlayToggle() {

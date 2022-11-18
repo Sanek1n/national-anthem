@@ -7,7 +7,8 @@ function insertDescription() {
   let element = document.createElement('div');
   element.className = 'question__wrapper';
   element.insertAdjacentHTML('beforeend',
-    `<div class="answers__description">
+    `<div class="answers__block">
+    <div class="answers__description">
       <div class="description__title">
         <div class="answers__flag"></div>
         <h2 class="answers__title">*******</h2>
@@ -30,14 +31,15 @@ function insertDescription() {
       </div>
     </div>
     <ul class="description__content">
-      <li class="description__item">Название на русском: <span class="description__name-rus"></span></li>
-      <li class="description__item">Название на государственном языке: <span class="description__name-self"></span></li>
-      <li class="description__item">Язык гимна: <span class="description__lang"></span></li>
-      <li class="description__item">Автор текста гимна: <span class="description__autor"></span></li>
-      <li class="description__item">Композитор: <span class="description__composer"></span></li>
-      <li class="description__item">Дата написания: <span class="description__date-write"></span></li>
-      <li class="description__item">Дата принятия: <span class="description__date-accept"></span></li>
-    </ul>`
+      <li class="description__item">Название на русском: <span class="description__name-rus description__text"></span></li>
+      <li class="description__item">Название на государственном языке: <span class="description__name-self description__text"></span></li>
+      <li class="description__item">Язык гимна: <span class="description__lang description__text"></span></li>
+      <li class="description__item">Автор текста гимна: <span class="description__autor description__text"></span></li>
+      <li class="description__item">Композитор: <span class="description__composer description__text"></span></li>
+      <li class="description__item">Дата написания: <span class="description__date-write description__text"></span></li>
+      <li class="description__item">Дата принятия: <span class="description__date-accept description__text"></span></li>
+    </ul>
+    </div>`
   );
 
   block.append(element);

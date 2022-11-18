@@ -4,37 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>National Anthem</title>
-  <link rel="stylesheet" href="style.css"> 
+  <title>StateSong</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/images/icons-song.png" type="image/svg">
 </head>
-<body>
-  <header class="header">
-    <div class="header__logo">
-      <img class="header__logo-image" src="" alt="Logo">
+<body class="body">
+
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo-image" src="./assets/images/icons-song-64.png" alt="Logo">
+      </div>
+      <nav class="header__nav">
+        <ul class="header__links">
+          <li class="header__item"><a class="header__link active" href="#">Главная</a></li>
+          <li class="header__item"><a class="header__link" href="./pages/main/main.html">Викторина</a></li>
+          <li class="header__item"><a class="header__link" href="./pages/result/result.html">Результаты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <h1>Угадайка</h1>
+        <h2>гимн!!!</h2>
+        <button onclick="window.location.href = './pages/main/main.html'">Начать викторину</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__content">
+            <li class="footer__item">&copy; 2022</li>
+            <li class="footer__item"><a class="footer__link" href="https://github.com/Sanek1n">Sanek1n on Github</a></li>
+            <li class="footer__item"><a class="footer__link" href="https://rs.school/js/"><img class="footer__logo" src="./assets/images/svg/rs_school_js.svg" alt="rsschool"></a></li>
+        </ul>
     </div>
-    <nav class="header__nav">
-      <ul class="header__links">
-        <li class="header__item"><a class="header__link active" href="#">Главная</a></li>
-        <li class="header__item"><a class="header__link" href="./pages/main/main.html">Викторина</a></li>
-        <li class="header__item"><a class="header__link" href="./pages/result/result.html">Результаты</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <div class="wrapper">
-      <h1>Угадайка</h1>
-      <h2>гимн!!!</h2>
-      <button onclick="window.location.href = './pages/main/main.html'">Начать викторину</button>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <ul class="footer__content">
-          <li class="footer__item">&copy; 2022</li>
-          <li class="footer__item"><a class="footer__link" href="https://github.com/Sanek1n">Sanek1n on Github</a></li>
-          <li class="footer__item"><a class="footer__link" href="https://rs.school/js/"><img class="footer__logo" src="./assets/svg/rs_school_js.svg" alt="rsschool"></a></li>
-      </ul>
-  </div>
-  </footer>
+    </footer>
+
 </body>
 </html>

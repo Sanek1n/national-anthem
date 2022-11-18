@@ -21,6 +21,7 @@ class Game extends Player {
     this.isPlay = false;
     this.isClick = false;
     this.anthem = new Audio();
+    this.areaArray = null;
 
     this.nextButton = document.querySelector('.quiz__button');
   }
@@ -33,6 +34,7 @@ class Game extends Player {
     insertDescriptionText();
 
     this.answerSet = new Set();
+    this.areaArray = document.querySelectorAll('.levels__item');
 
   }
 
@@ -55,6 +57,8 @@ class Game extends Player {
   }
 
   async writeDescription(event) {
+
+    document.querySelector('.answers__block').classList.add('show');
 
     let id = +event.target.dataset.id;
 
@@ -85,6 +89,8 @@ class Game extends Player {
     document.querySelector('.description__composer').textContent = anthemData[this.sectionId][id].composer;
     document.querySelector('.description__date-write').textContent = anthemData[this.sectionId][id].dateWrite;
     document.querySelector('.description__date-accept').textContent = anthemData[this.sectionId][id].dateAccept;
+
+    document.querySelector('.answers__block').classList.remove('show');
   }
 
   checkAnswer(event) {
@@ -122,7 +128,7 @@ class Game extends Player {
           this.isAnswer = true;
           this.mainPlayer.placeFlag.style.backgroundImage = `url('${anthemData[this.sectionId][id].flag}')`;
           this.mainPlayer.placeNameCountry.textContent = anthemData[this.sectionId][id].country;
-
+          this.nextButton.classList.add('enabled');
           this.nextButton.addEventListener('click', () => this.nextArea());
           if (this.sectionId === 4) {
             this.nextButton.textContent = 'Завершить';
@@ -150,6 +156,7 @@ class Game extends Player {
   }
 
   resetContent() {
+    document.querySelectorAll('.flag__element').forEach(el => el.remove());
 
     document.querySelector('.control__play').remove();
     document.querySelector('.question__control').insertAdjacentHTML('beforeend','<button class="control__play"></button>');
@@ -215,7 +222,8 @@ class Game extends Player {
     this.mainPlayer.sectionId = this.sectionId;
     this.mainPlayer.anthemId = this.anthemId;
     this.initGame();
-    console.log('end',this.sectionId);
+    this.areaArray[this.sectionId].classList.add('enabled');
+    this.areaArray[this.sectionId - 1].classList.remove('enabled');
   }
 
 }
