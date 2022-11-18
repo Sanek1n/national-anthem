@@ -134,12 +134,8 @@ html {
 .question__progress {
     position: relative;
     padding: 0 15px;
-    width: calc(100% - 90px - 80px);
-}
-
-.progress__bar {
-    width: 100%;
-    cursor: pointer;
+    width: calc(100% - 90px - 30px);
+    transition: .5s;
 }
 
 .progress__current {
@@ -244,6 +240,7 @@ html {
     background-color: #004585;
     transform: scale(1.05);
 }
+
 .answers__item::before {
     content: '';
     width: 12px;
@@ -271,11 +268,13 @@ html {
     overflow: hidden;
     background: #004585;
 }
+
 .answers__block {
     position: relative;
     width: 100%;
     transition: 1s;
 }
+
 .show {
     left: 100px;
     opacity: 0;
@@ -343,14 +342,39 @@ html {
 .answers__progress {
     position: relative;
     padding: 0 15px;
-    width: calc(100% - 90px - 80px);
+    width: calc(100% - 90px - 30px);
     cursor: pointer;
+    transition: .5s;
 }
 
+.answers__progress:hover,
+.question__progress:hover {
+    filter: brightness(150%) drop-shadow(0px 0px 5px #A65900);
+  }
+
+.progress__bar,
 .answers__bar {
     width: 100%;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    border: 0.5px solid transparent;
+    background: #FF8900;
+    cursor: pointer;
 }
+
+.progress__bar::-webkit-slider-thumb,
+.answers__bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 8px;
+    background: #004ffa;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+  }
 
 .answers__current {
     position: absolute;

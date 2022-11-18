@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 14px;
+  color: #4bf5b9;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
   margin: 0;

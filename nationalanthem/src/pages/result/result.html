@@ -6,16 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../../assets/images/icons-song.png" type="image/svg">
+  <link href="./style.css" rel="stylesheet">
   <title>Result</title>
 </head>
-<body>
+<body class="body">
   <main class="main">
-    <h1 class="main__title">Результат:</h1>
+    <p class="main__title">Результат:</p>
+    <p class="main__repeat"></p>
     <table class="main__table">
       <thead class="table__head">
         <tr>
-          <td class="head__area">Раздел</td>
-          <td class="head__score">Баллы</td>
+          <th class="head__area">Раздел</th>
+          <th class="head__score">Баллы</th>
         </tr>
       </thead>
       <tbody class="table__body">
@@ -45,8 +47,10 @@
         </tr>
       </tbody>
     </table>
-    <button class="main__repeat" onclick="window.location.href = '../main/main.html'">Повторить</button>
-    <button class="main__main" onclick="window.location.href = '../../index.html'">На главную страницу</button>
+    <div class="main__buttons">
+      <button class="buttons__repeat" onclick="window.location.href = '../main/main.html'">Попробовать<br>еще раз</button>
+      <button class="buttons__main" onclick="window.location.href = '../../index.html'">На главную страницу</button>
+    </div>
   </main>
   <script src="./result.js"></script>
 </body>
