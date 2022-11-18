@@ -15,7 +15,7 @@ html {
     margin: 0 auto;
     padding: 0 auto;
     background-color: #002046;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .quiz__wrapper {

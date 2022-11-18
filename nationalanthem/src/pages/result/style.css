@@ -37,9 +37,9 @@ html {
 }
 
 .main__table {
-  margin: 40px auto;
+  margin: 30px auto;
   font-size: 2em;
-  line-height: 2em;
+  line-height: 1.5em;
   border-collapse: separate;
   border-spacing: 5px;
 }
@@ -53,7 +53,7 @@ html {
 .body__score {
   width: 200px;
   background: #004ffa;
-  padding: 5px 20px 10px;
+  padding: 0px 20px 10px;
   border-radius: 5px;
 }
 
