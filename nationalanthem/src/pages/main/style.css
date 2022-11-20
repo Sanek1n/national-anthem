@@ -142,12 +142,14 @@ html {
     position: absolute;
     left: 20px;
     top: 20px;
+    font-size: 1.3em;
 }
 
 .progress__length {
     position: absolute;
     left: calc(100% - 50px);
     top: 20px;
+    font-size: 1.3em;
 }
 
 .question__volume,
@@ -380,12 +382,14 @@ html {
     position: absolute;
     left: 20px;
     top: 20px;
+    font-size: 1.3em;
 }
 
 .answers__length {
     position: absolute;
     left: calc(100% - 50px);
     top: 20px;
+    font-size: 1.3em;
 }
 
 .description__item {
@@ -425,3 +429,56 @@ html {
 .enabled:hover {
     filter: brightness(150%) drop-shadow(0px 0px 5px #4bf5b9);
 }
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    html {
+        font-size: 13px;
+      }
+    .quiz {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    html {
+      font-size: 11px;
+    }
+  
+    .quiz {
+        padding: 10px;
+    }
+
+    .quiz__question {
+        padding: 10px;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .question__title {
+        text-align: center;
+    }
+
+    .quiz__block {
+        flex-direction: column;
+    }
+
+    .question__flag {
+        width: 180px;
+        height: 90px;
+    }
+
+    .question__content {
+        width: 100%;
+    }
+    
+
+    .quiz__answers {
+        width: 100%;
+        height: 400px;
+    }
+
+    .question__wrapper {
+        width: 100%;
+    }
+  }
