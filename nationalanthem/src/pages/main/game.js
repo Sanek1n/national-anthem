@@ -126,6 +126,7 @@ class Game extends Player {
           document.querySelector('.quiz__count').textContent = `Score: ${this.score}`;
           event.target.classList.add('right');
           this.isAnswer = true;
+          this.mainPlayer.anthemPlayToggle();
           this.mainPlayer.placeFlag.style.backgroundImage = `url('${anthemData[this.sectionId][id].flag}')`;
           this.mainPlayer.placeNameCountry.textContent = anthemData[this.sectionId][id].country;
           this.nextButton.classList.add('enabled');
