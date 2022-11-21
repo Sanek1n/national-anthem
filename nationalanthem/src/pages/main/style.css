@@ -449,6 +449,20 @@ html {
         padding: 10px;
     }
 
+    .quiz__levels {
+        height: 100px;
+        border-radius: 0;
+    }
+
+    .levels__item {
+        flex-basis: 33%;
+    }
+
+    .levels__items {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
     .quiz__question {
         padding: 10px;
         height: fit-content;

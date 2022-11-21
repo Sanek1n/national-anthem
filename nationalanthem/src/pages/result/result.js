@@ -9,15 +9,15 @@ for (let i = 0; i < playerScore.length; i++) {
 }
 
 let sum = playerScore.reduce((sum, val) => sum + val, 0);
-document.querySelector('.score-5').textContent = sum;
+document.querySelector('.score-6').textContent = sum;
 
-if (sum === 25) {
+if (sum === 30) {
   document.querySelector('.main__title').textContent = 'Поздравляю!!! Максимальный результат!';
   document.querySelector('.main__repeat').textContent = 'Вы гений?!';
-} else if(sum <= 24 && sum >= 20) {
+} else if(sum <= 29 && sum >= 20) {
   document.querySelector('.main__title').textContent = 'Поздравляю!!! Отличный результат.';
   document.querySelector('.main__repeat').textContent = 'Попробуйте еще раз.';
-} else if(sum <= 19 && sum >= 10) {
+} else if(sum <= 19 && sum >= 11) {
   document.querySelector('.main__title').textContent = 'Поздравляю!!! Хороший результат.';
   document.querySelector('.main__repeat').textContent = 'Попробуйте еще раз.';
 } else {

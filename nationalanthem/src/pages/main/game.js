@@ -133,7 +133,7 @@ class Game extends Player {
           this.mainPlayer.placeNameCountry.textContent = anthemData[this.sectionId][id].country;
           this.nextButton.classList.add('enabled');
           this.nextButton.addEventListener('click', () => this.nextArea());
-          if (this.sectionId === 4) {
+          if (this.sectionId === 5) {
             this.nextButton.textContent = 'Завершить';
           }
 
@@ -180,7 +180,7 @@ class Game extends Player {
     let array = [this.anthemId];
     let id;
 
-    for(let i = 0; i < 5; i++) {
+    for(let i = 0; i < 6; i++) {
       do {
         id = Math.floor(Math.random() * ((9-i) + 1))
       } while (array.includes(id))
@@ -198,7 +198,7 @@ class Game extends Player {
 
   nextArea() {
 
-    if (this.sectionId === 4) {
+    if (this.sectionId === 5) {
       localStorage.setItem('score', JSON.stringify(this.scoreArray));
       window.location.href = '../result/result.html';
     }
