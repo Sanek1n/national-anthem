@@ -180,7 +180,7 @@ class Game extends Player {
     let array = [this.anthemId];
     let id;
 
-    for(let i = 0; i < 6; i++) {
+    for(let i = 0; i < 5; i++) {
       do {
         id = Math.floor(Math.random() * ((9-i) + 1))
       } while (array.includes(id))
